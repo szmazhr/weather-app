@@ -1,0 +1,37 @@
+.additional-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .additional-item {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    &.feels-like .value::after {
+      content: '℃';
+    }
+    &.humidity .value::after {
+      content: '%';
+    }
+    &.wind-speed .value::after {
+      content: 'Kph';
+    }
+    &.visibility .value::after {
+      content: 'Km';
+    }
+    .title {
+      font-size: 1rem;
+    }
+
+    .icon {
+      font-size: 2.5rem;
+      color: $dark-color;
+    }
+  }
+}

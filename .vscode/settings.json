@@ -1,0 +1,18 @@
+{"VsCodeTaskButtons.tasks": [
+  {
+    "label": "open",
+    "task": "npm: open",
+    "tooltip": "Run development server and open in browser",
+  },
+  {
+    "label": "dev",
+    "task": "npm: dev",
+    "tooltip": "Run development server",
+  },
+  {
+    "label": "build",
+    "task": "npm: build",
+    "tooltip": "Build the production version",
+  }
+]
+}

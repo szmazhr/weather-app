@@ -57,7 +57,6 @@ const updateDisplay = (() => {
       loadingImg.remove();
       return;
     }
-    console.log(data);
     city.textContent = data.name
     temperature.textContent = data.main.temp.toFixed(1);
     atmosphere.textContent = data.weather[0].main;

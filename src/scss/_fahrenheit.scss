@@ -1,0 +1,22 @@
+.fahrenheit {
+  .main-content {
+    h2 {
+      &::after {
+        content: '℉';
+      }
+    }
+  }
+  .additional-content {
+    .additional-item {
+      &.feels-like .value::after {
+        content: '℉';
+      }
+      &.wind-speed .value::after {
+        content: 'Mph';
+      }
+      &.visibility .value::after {
+        content: 'Mi';
+      }
+    }
+  }
+}
